@@ -18,7 +18,7 @@ import co.com.valtica.kitbasico.facade.IAfiliadosFacade;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes= {AfiliadoRepositoryFake.class, AfiliadosFacade.class})
 public class AfiliadoFacadeTestConFake {
-	
+	/*
 	@Autowired
 	IAfiliadosFacade afiliadosFacade;
 	
@@ -32,6 +32,6 @@ public class AfiliadoFacadeTestConFake {
 	public void noCrearAfiliadoMenor18Anios() {
 		Afiliado afiliado=new Afiliado("1231232", "Pedro", "Perez", "123123123", 15, 100, 0);
 		assertFalse("Afiliado no creado", afiliadosFacade.afiliar(afiliado)!=null);
-	}
+	}*/
 	
 }

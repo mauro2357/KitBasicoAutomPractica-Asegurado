@@ -19,10 +19,10 @@ public class AfiliadoRepositoryFake implements AfiliadosRepository{
 	private List<Afiliado> afiliados = new ArrayList<>();
 	
 	public AfiliadoRepositoryFake() {
-		afiliados.add(new Afiliado("123", "Mauricio", "Giraldo", "3001112233", 31, 100, 0));
-		afiliados.add(new Afiliado("456", "Nestor", "Escobar", "3004445566", 27, 100, 0));
+	//	afiliados.add(new Afiliado("123", "Mauricio", "Giraldo", "3001112233", 31, 100, 0));
+	//	afiliados.add(new Afiliado("456", "Nestor", "Escobar", "3004445566", 27, 100, 0));
 	}
-
+/*
 	@Override
 	public List<Afiliado> findAll() {
 		// TODO Auto-generated method stub
@@ -166,5 +166,5 @@ public class AfiliadoRepositoryFake implements AfiliadosRepository{
 		// TODO Auto-generated method stub
 		return false;
 	}
-
+*/
 }

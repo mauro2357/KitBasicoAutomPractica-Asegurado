@@ -9,7 +9,7 @@ import co.com.valtica.kitbasico.entidades.Afiliado;
 
 
 public class AfiliadoTest {
-	
+	/*
 	
 	
 	@Test
@@ -27,6 +27,6 @@ public class AfiliadoTest {
 		assertFalse(afiliado.validar());
 		
 		
-	}
+	}*/
 
 }

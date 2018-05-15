@@ -23,7 +23,7 @@ import static org.mockito.Mockito.*;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes= {ApplicationTestConfiguration.class, AfiliadosFacade.class})
 public class AfiliadoFacadeTestConMock {
-	
+	/*
 	@Autowired
 	IAfiliadosFacade afiliadosFacade;
 	
@@ -44,5 +44,5 @@ public class AfiliadoFacadeTestConMock {
 		afiliadosFacade.afiliar(afiliado);
 		verify(afiliadosRepositorio, never()).save(afiliado);
 	}
-	
+	*/
 }

@@ -10,15 +10,15 @@ import co.com.valtica.kitbasico.entidades.Ciudad;
 
 @Component
 public class AfiliadosFacade implements IAfiliadosFacade{
-	
+	/*
 	@Autowired
 	AfiliadosRepository afiliadosRepository;
 	
 	@Autowired
 	CiudadRepository ciudadRepository;
-	
+	*/
 	public Afiliado afiliar(Afiliado afiliado) {
-		if(afiliado.validar()) {
+	/*	if(afiliado.validar()) {
 			return afiliadosRepository.save(afiliado);
 		}
 		
@@ -28,25 +28,29 @@ public class AfiliadosFacade implements IAfiliadosFacade{
 		
 		else {
 			return null;
-		}
+		}*/
+		return null;
 	}
 	
 	public Afiliado afiliarSegunSalario(Afiliado afiliado) {
-		if(afiliado.validarSalario()) {
+	/*	if(afiliado.validarSalario()) {
 			return afiliadosRepository.save(afiliado);
 		}else {
 			return null;
-		}
+		}*/
+		return null;
 	}
 	
 	public Afiliado findById(long id) {
-		return afiliadosRepository.findById(id)
-        .orElse(new Afiliado());
+	//	return afiliadosRepository.findById(id)
+      //  .orElse(new Afiliado());
+		return null;
 	}
 	
 	public Ciudad findByIdCiudad(long id) {
-		return ciudadRepository.findById(id)
-        .orElse(new Ciudad());
+//		return ciudadRepository.findById(id)
+  //      .orElse(new Ciudad());
+		return null;
 	}
 
 }

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import co.com.valtica.kitbasico.entidades.Afiliado;
 
-@Repository
-public interface AfiliadosRepository extends JpaRepository<Afiliado, Long> {
+//@Repository
+public interface AfiliadosRepository  {
 
 }
