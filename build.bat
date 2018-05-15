@@ -1,3 +1,0 @@
-cd KitBasicoAutomApp
-gradle bootJar
-exit

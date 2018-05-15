@@ -1,0 +1,2 @@
+cd KitBasicoAutomApp
+gradlew sonarqube
