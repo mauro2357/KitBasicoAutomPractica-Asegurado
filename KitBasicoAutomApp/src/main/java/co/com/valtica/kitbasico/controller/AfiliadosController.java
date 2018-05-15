@@ -27,12 +27,14 @@ public class AfiliadosController {
 	 
 	 @PostMapping("/asegurado/validar")
 	 public String crearAfiliadoSegunSalario(@Valid @RequestBody String parametros) {
-	     return parametros;
+		 String valores= "{valor:true,mensaje: 'Es Asegurable'}";
+	     return valores;
 	 }
 	 
 	 @GetMapping("/afiliado/{id}")
 	 public String getAfiliadoById(@PathVariable(value = "id") String id) {
-	     return id;
+		 String valor = "{id_asegurado:1,tipo_identificacion:'DNI',num_identificacion:'123435',empresa:'GMD',poliza:'123'}";
+	     return valor;
 	 }
 	
 }
