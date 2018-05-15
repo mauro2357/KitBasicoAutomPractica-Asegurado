@@ -5,9 +5,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity(name="afiliados")
+//@Entity(name="afiliados")
 public class Afiliado {
-	
+	/*
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idAfiliado;
@@ -97,6 +97,6 @@ public class Afiliado {
 			return false;
 		}		
 	}
-
+*/
 
 }

@@ -5,9 +5,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity(name="ciudad")
+//@Entity(name="ciudad")
 public class Ciudad {
-	
+	/*
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idCiudad;
@@ -27,5 +27,5 @@ public class Ciudad {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
+*/
 }
