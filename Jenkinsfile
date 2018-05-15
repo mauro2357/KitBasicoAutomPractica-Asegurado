@@ -7,7 +7,7 @@
 		stages {
 			stage('Probar unitariamente') { 
 				steps { 
-					bat "/KitBasicoAutomApp/test.bat"
+					bat "test.bat"
 				}
 			}
 		
