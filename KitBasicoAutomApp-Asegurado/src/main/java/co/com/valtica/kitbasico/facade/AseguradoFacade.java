@@ -36,4 +36,10 @@ public class AseguradoFacade implements IAseguradoFacade {
 		return aseguradoRepositorio.getOne(id); 
 	}
 
+	@Override
+	public Asegurado tieneLiquidez(Asegurado asegurado) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
