@@ -26,9 +26,9 @@ public class AseguradoController {
 	 }*/
 	 
 	 @PostMapping("/asegurado/validar")
-	 public String crearAfiliadoSegunSalario(@Valid @RequestBody String parametros) {
-		 String valores= "{valor:true,mensaje: 'Es Asegurable'}";
-	     return valores;
+	 public boolean crearAfiliadoSegunSalario(@Valid @RequestBody String parametros) {
+		 
+	     return false;
 	 }
 	 
 	 @GetMapping("/asegurado/{id}")

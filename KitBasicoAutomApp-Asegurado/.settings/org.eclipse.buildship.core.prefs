@@ -1,8 +1,2 @@
-#Wed May 16 10:14:01 COT 2018
-connection.gradle.distribution=GRADLE_DISTRIBUTION(LOCAL_INSTALLATION(D\:\\Desarrollo\\Herramientas\\gradle-4.4.1))
-override.workspace.settings=true
-eclipse.preferences.version=1
-gradle.user.home=
 connection.project.dir=
-build.scans.enabled=false
-offline.mode=false
+eclipse.preferences.version=1
