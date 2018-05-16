@@ -12,24 +12,7 @@ public class AseguradoFacade implements IAseguradoFacade {
 	@Autowired
 	AseguradoRepository aseguradoRepositorio;
 	
-	@Override
-	public Asegurado afiliar(Asegurado Asegurado) {
- 
-		return null;
-	}
-
-	@Override
-	public Asegurado findById(long id) {
- 
-		return null;
-	}
-
-	@Override
-	public Asegurado afiliarSegunSalario(Asegurado Asegurado) {
- 
-		return null;
-	}
-
+	
 	@Override
 	public Asegurado obtenerInformacionAsegurado(long id) {
  

@@ -24,7 +24,7 @@ public class AseguradoController {
 
 	
 	@GetMapping("/asegurado/{id}")
-	public String getAfiliadoById(@PathVariable(value = "id") Long id) {
+	public String getAseguradoById(@PathVariable(value = "id") Long id) {
 
 		return aseguradoFacade.obtenerInformacionAsegurado(id).getTipoAsegurado();
 	}
