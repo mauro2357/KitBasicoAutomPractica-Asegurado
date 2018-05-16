@@ -28,6 +28,7 @@ public class AseguradoController {
 	 @PostMapping("/asegurado/validar")
 	 public boolean crearAfiliadoSegunSalario(@Valid @RequestBody String parametros) {
 		 
+		
 	     return false;
 	 }
 	 
