@@ -99,7 +99,7 @@
 		
 		post {
 			failure {
-				mail to: 'mauro2357@gmail.com',
+				mail to: 'jsorrillag@gmd.com.pe;surbano@gmd.com.pe;enrique.gonzales-le@zoluxiones.com;luis.marcilla@sura.pe;carlos.linares@mdp.com.pe',
 					subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
 					body: "Something is wrong with ${env.BUILD_URL}"
 			}
