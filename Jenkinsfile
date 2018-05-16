@@ -83,12 +83,13 @@
 						branches: [[name: '*/master']], 
 						doGenerateSubmoduleConfigurations: false, 
 						extensions: [[$class: 'RelativeTargetDirectory', 
-							relativeTargetDir: 'KitBasicoAutomApp-Ops']], 
+							relativeTargetDir: 'KitBasicoAutomPractica-Asegurado-Ops']], 
 						submoduleCfg: [], 
-						userRemoteConfigs: [[url: 'https://github.com/mauro2357/KitBasicoAutomApp-Ops.git']]])     
+						userRemoteConfigs: [[url: 'https://github.com/mauro2357/KitBasicoAutomPractica-Asegurado-Ops.git']]])     
 			      }
-					bat 'mkdir "KitBasicoAutomApp/build/libs/config"'
-					bat 'xcopy "KitBasicoAutomApp-Ops/config" "KitBasicoAutomApp/build/libs/config"'
+					bat 'mkdir "KitBasicoAutomApp-Asegurado/build/libs/config"'
+					bat 'xcopy "KitBasicoAutomPractica-Asegurado-Ops/config" "KitBasicoAutomApp-Asegurado/build/libs/config"'
+					bat 'copy  "KitBasicoAutomPractica-Asegurado-Ops/DefaultFlywayConfig.config" "../DefaultFlywayConfig.config"'
 					bat "deploy-bd.bat"
 					bat "deploy-app.bat"
 				}
