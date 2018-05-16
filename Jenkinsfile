@@ -89,7 +89,7 @@
 			      }
 					bat 'mkdir "KitBasicoAutomApp-Asegurado/build/libs/config"'
 					bat 'xcopy "KitBasicoAutomPractica-Asegurado-Ops/config" "KitBasicoAutomApp-Asegurado/build/libs/config"'
-					bat 'copy  KitBasicoAutomPractica-Asegurado-Ops/config/DefaultFlywayConfig.config DefaultFlywayConfig.config'
+					bat 'copy  KitBasicoAutomPractica-Asegurado-Ops/config/DefaultFlywayConfig.config /DefaultFlywayConfig.config'
 					bat "deploy-bd.bat"
 					bat "deploy-app.bat"
 				}
