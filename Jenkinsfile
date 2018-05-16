@@ -12,7 +12,7 @@
 			}
 		
 			
-			stage('Analisis de cÃ³digo') { 
+			stage('Analisis de código') { 
 				steps { 
 					withSonarQubeEnv('SonarQubeLocal') {
 						bat 'anali_code.bat'
@@ -21,7 +21,7 @@
 				}
 			}
 			
-			stage('Verificar calidad tÃ©cnica') { 
+			stage('Verificar calidad técnica') { 
 				steps { 
 					script{					
 					timeout(time: 1, unit: 'HOURS') { // Just in case something goes wrong, pipeline will be killed after a timeout
@@ -43,7 +43,7 @@
 				}
 			}
 			
-			stage('Desplegar IntegraciÃ³n') { 
+			stage('Desplegar Integración') { 
 				steps { 
 					bat "deploy-bd.bat"
 					bat "deploy-app.bat"

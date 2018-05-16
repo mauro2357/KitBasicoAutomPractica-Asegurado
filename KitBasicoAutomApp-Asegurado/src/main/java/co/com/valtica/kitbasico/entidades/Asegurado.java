@@ -1,113 +1,133 @@
 package co.com.valtica.kitbasico.entidades;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
-@Entity(name = "asegurado")
+@Table(name = "asegurado")
+@Entity(name = "afiliados")
 public class Asegurado {
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long IDASEGURADO;
-	private String NOMBRES;
-	private String APELLIDOS;
-	private int EDAD;
-	private String TIPO_ASEGURADO;
-	private String EMPRESA;
-	private int SALARIO;
-	private int CREDITOS;
-	private int GASTOS_FIJOS;
+	@Column(name = "IDASEGURADO")
+	private Long idAsegurado;
+	@Column(name = "NOMBRES")
+	private String nombres;
+	@Column(name = "APELLIDOS")
+	private String apellidos;
+	@Column(name = "EDAD")
+	private Integer edad;
+	@Column(name = "TIPO_ASEGURADO")
+	private String tipoAsegurado;
+	@Column(name = "EMPRESA")
+	private String empresa;
+	@Column(name = "SALARIO")
+	private Integer salario;
+	@Column(name = "CREDITOS")
+	private Integer creditos;
+	@Column(name = "GASTOS_FIJOS")
+	private Integer gastosFijos;
+	@Column(name = "ID_POLIZA")
+	private String id_poliza;
 
 	public Asegurado() {
 	}
 
-	public Asegurado(Long iDASEGURADO, String nOMBRES, String aPELLIDOS, int eDAD, String tIPO_ASEGURADO,
-			String eMPRESA, int sALARIO, int cREDITOS, int gASTOS_FIJOS) {
-		IDASEGURADO = iDASEGURADO;
-		NOMBRES = nOMBRES;
-		APELLIDOS = aPELLIDOS;
-		EDAD = eDAD;
-		TIPO_ASEGURADO = tIPO_ASEGURADO;
-		EMPRESA = eMPRESA;
-		SALARIO = sALARIO;
-		CREDITOS = cREDITOS;
-		GASTOS_FIJOS = gASTOS_FIJOS;
+	public Asegurado(Long idAsegurado, String nombres, String apellidos, Integer edad, String tipoAsegurado,
+			String empresa, Integer salario, Integer creditos, Integer gastosFijos, String id_poliza) {
+		this.idAsegurado = idAsegurado;
+		this.nombres = nombres;
+		this.apellidos = apellidos;
+		this.edad = edad;
+		this.tipoAsegurado = tipoAsegurado;
+		this.empresa = empresa;
+		this.salario = salario;
+		this.creditos = creditos;
+		this.gastosFijos = gastosFijos;
+		this.id_poliza = id_poliza;
 	}
 
-	public Long getIDASEGURADO() {
-		return IDASEGURADO;
+	public Long getIdAsegurado() {
+		return idAsegurado;
 	}
 
-	public void setIDASEGURADO(Long iDASEGURADO) {
-		IDASEGURADO = iDASEGURADO;
+	public void setIdAsegurado(Long idAfiliado) {
+		this.idAsegurado = idAfiliado;
 	}
 
-	public String getNOMBRES() {
-		return NOMBRES;
+	public String getNombres() {
+		return nombres;
 	}
 
-	public void setNOMBRES(String nOMBRES) {
-		NOMBRES = nOMBRES;
+	public void setNombres(String nombres) {
+		this.nombres = nombres;
 	}
 
-	public String getAPELLIDOS() {
-		return APELLIDOS;
+	public String getApellidos() {
+		return apellidos;
 	}
 
-	public void setAPELLIDOS(String aPELLIDOS) {
-		APELLIDOS = aPELLIDOS;
+	public void setApellidos(String apellidos) {
+		this.apellidos = apellidos;
 	}
 
-	public int getEDAD() {
-		return EDAD;
+	public Integer getEdad() {
+		return edad;
 	}
 
-	public void setEDAD(int eDAD) {
-		EDAD = eDAD;
+	public void setEdad(Integer edad) {
+		this.edad = edad;
 	}
 
-	public String getTIPO_ASEGURADO() {
-		return TIPO_ASEGURADO;
+	public String getTipoAsegurado() {
+		return tipoAsegurado;
 	}
 
-	public void setTIPO_ASEGURADO(String tIPO_ASEGURADO) {
-		TIPO_ASEGURADO = tIPO_ASEGURADO;
+	public void setTipoAsegurado(String tipoAsegurado) {
+		this.tipoAsegurado = tipoAsegurado;
 	}
 
-	public String getEMPRESA() {
-		return EMPRESA;
+	public String getEmpresa() {
+		return empresa;
 	}
 
-	public void setEMPRESA(String eMPRESA) {
-		EMPRESA = eMPRESA;
+	public void setEmpresa(String empresa) {
+		this.empresa = empresa;
 	}
 
-	public int getSALARIO() {
-		return SALARIO;
+	public Integer getSalario() {
+		return salario;
 	}
 
-	public void setSALARIO(int sALARIO) {
-		SALARIO = sALARIO;
+	public void setSalario(Integer salario) {
+		this.salario = salario;
 	}
 
-	public int getCREDITOS() {
-		return CREDITOS;
+	public Integer getCreditos() {
+		return creditos;
 	}
 
-	public void setCREDITOS(int cREDITOS) {
-		CREDITOS = cREDITOS;
+	public void setCreditos(Integer creditos) {
+		this.creditos = creditos;
 	}
 
-	public int getGASTOS_FIJOS() {
-		return GASTOS_FIJOS;
+	public Integer getGastosFijos() {
+		return gastosFijos;
 	}
 
-	public void setGASTOS_FIJOS(int gASTOS_FIJOS) {
-		GASTOS_FIJOS = gASTOS_FIJOS;
+	public void setGastosFijos(Integer gastosFijos) {
+		this.gastosFijos = gastosFijos;
 	}
-	
-	
+
+	public String getId_poliza() {
+		return id_poliza;
+	}
+
+	public void setId_poliza(String id_poliza) {
+		this.id_poliza = id_poliza;
+	}
 
 }

@@ -1,2 +1,2 @@
-cd KitBasicoAutomApp
+cd KitBasicoAutomApp-Asegurado
 gradlew sonarqube

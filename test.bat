@@ -1,3 +1,3 @@
-cd KitBasicoAutomApp
+cd KitBasicoAutomApp-Asegurado
 gradle test
 exit
