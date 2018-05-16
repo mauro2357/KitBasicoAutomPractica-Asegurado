@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.google.gson.Gson;
+
 import co.com.valtica.kitbasico.entidades.Asegurado;
 import co.com.valtica.kitbasico.facade.IAseguradoFacade;
 
@@ -27,7 +29,8 @@ public class AseguradoController {
 
 	@GetMapping("/asegurado/{id}")
 	public String getAfiliadoById(@PathVariable(value = "id") Long id) {
-		return id.toString();
+		
+		return aseguradoFacade.obtenerInformacionAsegurado(id).getTipoAsegurado();
 	}
 
 }
