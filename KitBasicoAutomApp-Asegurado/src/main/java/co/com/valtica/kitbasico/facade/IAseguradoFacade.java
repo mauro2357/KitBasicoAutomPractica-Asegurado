@@ -11,4 +11,6 @@ public interface IAseguradoFacade {
 	public Asegurado afiliarSegunSalario(Asegurado Asegurado);
 
 	public Asegurado obtenerInformacionAsegurado(long id);
+	
+	public Asegurado tieneLiquidez(Asegurado asegurado);
 }
