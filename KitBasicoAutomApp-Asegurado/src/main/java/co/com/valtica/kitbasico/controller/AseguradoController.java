@@ -22,15 +22,41 @@ public class AseguradoController {
 	@Autowired
 	IAseguradoFacade aseguradoFacade;
 
-	@PostMapping("/asegurado/valida")
-	public String crearAfiliadoSegunSalario(@Valid @RequestBody String asegurado) {
-		return asegurado;
-	}
-
+	
 	@GetMapping("/asegurado/{id}")
 	public String getAfiliadoById(@PathVariable(value = "id") Long id) {
-		
+
 		return aseguradoFacade.obtenerInformacionAsegurado(id).getTipoAsegurado();
 	}
 
+	@PostMapping("/asegurado/valida")
+	public boolean tieneLiquidez(@Valid @RequestBody int ID_Asegurado) {
+		
+		Asegurado ase = new Asegurado();
+		ase.setSalario(aseguradoFacade.obtenerInformacionAsegurado(ID_Asegurado).getSalario());
+		ase.setGastosFijos(aseguradoFacade.obtenerInformacionAsegurado(ID_Asegurado).getGastosFijos());
+		ase.setEdad(aseguradoFacade.obtenerInformacionAsegurado(ID_Asegurado).getEdad());
+		ase.setCreditos(aseguradoFacade.obtenerInformacionAsegurado(ID_Asegurado).getCreditos());
+		
+		boolean polizaEsFinanciada = polizaEsFinanciada();
+		int valorPoliza = obtenerValorPoliza();
+		boolean estaEnCentralRiesgo = estaEnCentralRiesgo();
+		return aseguradoFacade.tieneLiquidez(ase, polizaEsFinanciada, valorPoliza, estaEnCentralRiesgo);
+	}
+	
+	public boolean polizaEsFinanciada()
+	{
+	return true;
+	}
+	 
+	public int obtenerValorPoliza()
+	{
+	return 100;
+	}
+	 
+	 
+	public boolean estaEnCentralRiesgo()
+	{
+	return true;
+	}
 }

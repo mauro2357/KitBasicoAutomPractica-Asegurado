@@ -12,5 +12,5 @@ public interface IAseguradoFacade {
 
 	public Asegurado obtenerInformacionAsegurado(long id);
 	
-	public Asegurado tieneLiquidez(Asegurado asegurado);
+	public Boolean tieneLiquidez(Asegurado asegurado,boolean polizaEsFinanciada, int valorPoliza, boolean estaEnCentralRiesgo);
 }

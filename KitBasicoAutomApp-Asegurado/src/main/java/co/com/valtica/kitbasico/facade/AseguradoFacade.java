@@ -37,9 +37,27 @@ public class AseguradoFacade implements IAseguradoFacade {
 	}
 
 	@Override
-	public Asegurado tieneLiquidez(Asegurado asegurado) {
-		// TODO Auto-generated method stub
-		return null;
+	public Boolean tieneLiquidez(Asegurado asegurado, boolean polizaEsFinanciada, int valorPoliza,
+			boolean estaEnCentralRiesgo) {
+
+		int excesoMensual = 0;
+		int cuotaMensual = 0;
+		boolean tieneLiquidez = true;
+		if (polizaEsFinanciada)
+		{
+			int salario =asegurado.getSalario();
+			int gastos = asegurado.getGastosFijos();
+			double creditos =asegurado.getCreditos();
+		excesoMensual = (int) (salario - gastos - creditos);
+		cuotaMensual = valorPoliza/11;
+		 
+		tieneLiquidez = (excesoMensual>cuotaMensual) && estaEnCentralRiesgo && (asegurado.getEdad()>18);
+		 
+		}
+		 
+		return tieneLiquidez;
 	}
+
+
 
 }
