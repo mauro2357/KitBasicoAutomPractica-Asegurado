@@ -32,7 +32,7 @@ flyway {
 }
 
 bootJar {
-    baseName = 'KitBasicoAutomatizacion'
+    baseName = 'KitBasicoAutomatizacion-Asegurado'
     version =  ''
 }
 
