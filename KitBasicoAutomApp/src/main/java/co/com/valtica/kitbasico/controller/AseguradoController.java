@@ -31,7 +31,7 @@ public class AseguradoController {
 	     return valores;
 	 }
 	 
-	 @GetMapping("/afiliado/{id}")
+	 @GetMapping("/asegurado/{id}")
 	 public String getAfiliadoById(@PathVariable(value = "id") String id) {
 		 String valor = "{id_asegurado:1,tipo_identificacion:'DNI',num_identificacion:'123435',empresa:'GMD',poliza:'123'}";
 	     return valor;
